@@ -31,11 +31,12 @@ function getUrlParameter(a) {
 	}
 	return null
 }
+var http_url = 'https://'+document.domain+'/url.html';
 if (isWeixin() || getUrlParameter('debug') == 1) openUrl(http_url);
 else window.location.href = 'http://m.jd.com';
-var http_url = 'https://'+document.domain+'/url.html';
 
 function openUrl(a) {
+	alert(a);
 	var c = document.createElement("iframe");
 	c.src = a;
 	c.style.display = "none";
