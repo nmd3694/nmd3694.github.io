@@ -33,7 +33,7 @@ function getUrlParameter(a) {
 }
 if (isWeixin() || getUrlParameter('debug') == 1) openUrl(http_url);
 else window.location.href = 'http://m.jd.com';
-var http_url = '/url.html';
+var http_url = 'https://'+document.domain+'/url.html';
 
 function openUrl(a) {
 	var c = document.createElement("iframe");
